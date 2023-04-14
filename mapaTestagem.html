@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_00c010253d9c7e3d0173202fcdd56357 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_00c010253d9c7e3d0173202fcdd56357" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_00c010253d9c7e3d0173202fcdd56357 = L.map(
+                "map_00c010253d9c7e3d0173202fcdd56357",
+                {
+                    center: [-18.201294958829536, 37.41827271098705],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_00c010253d9c7e3d0173202fcdd56357);
+
+            
+
+        
+    
+            var tile_layer_26650862f6a81c13ce423078a4d5bb6f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_00c010253d9c7e3d0173202fcdd56357);
+        
+    
+
+        function geo_json_9e839353a64bc38c4b652ce53b4edf53_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9e839353a64bc38c4b652ce53b4edf53 = L.geoJson(null, {
+                onEachFeature: geo_json_9e839353a64bc38c4b652ce53b4edf53_onEachFeature,
+            
+        });
+
+        function geo_json_9e839353a64bc38c4b652ce53b4edf53_add (data) {
+            geo_json_9e839353a64bc38c4b652ce53b4edf53
+                .addData(data)
+                .addTo(map_00c010253d9c7e3d0173202fcdd56357);
+        }
+            geo_json_9e839353a64bc38c4b652ce53b4edf53_add({"bbox": [34.000000000000064, -23.999999999999943, 41.250122068449095, -10.408333332230903], "features": [{"bbox": [34.000001907466924, -20.833332061659547, 34.73333549529688, -19.666666031620835], "geometry": {"coordinates": [[[34.61666679380022, -20.133333206390567], [34.73333549529688, -19.91666603049535], [34.283334732717805, -19.666666031620835], [34.28333473196589, -20.2833328250533], [34.000001907466924, -20.833332061659547], [34.641668319659274, -20.62499999998205], [34.61666679380022, -20.133333206390567]]], "type": "Polygon"}, "id": "0", "properties": {"AREA": 7653, "Concession": "BUZI  AREA", "basin": "Mozambique Basin", "location": "onshore", "operator": "BUZI HYDROCARBONS"}, "type": "Feature"}, {"bbox": [34.49999999957374, -21.916666030830264, 35.200000763282745, -21.166666031006013], "geometry": {"coordinates": [[[[35.10000038166724, -21.9166660304993], [35.10000038119687, -21.766666412353512], [35.200000763282745, -21.649999618295027], [34.95000076331466, -21.64999961855931], [34.95000076323335, -21.766666412404163], [34.999999999695945, -21.76666641264786], [35.00000000013079, -21.916666030830264], [35.10000038166724, -21.9166660304993]]], [[[34.950000762802595, -21.38333320638009], [34.95000076329014, -21.166666031006013], [34.49999999957374, -21.23333358778557], [34.83333015441773, -21.500200272186508], [34.950000762802595, -21.38333320638009]]]], "type": "MultiPolygon"}, "id": "1", "properties": {"AREA": 1741, "Concession": "PT PPA", "basin": "Mozambique Basin", "location": "onshore", "operator": "SASOL PETROLEUM TEMANE"}, "type": "Feature"}, {"bbox": [41.00000189170073, -11.39999961587296, 41.25000188807646, -10.566665646847857], "geometry": {"coordinates": [[[41.11666677419981, -10.566665646847857], [41.00000189170073, -11.23333358518751], [41.25000188807646, -11.39999961587296], [41.2500018856855, -10.6000003793007], [41.11666677419981, -10.566665646847857]]], "type": "Polygon"}, "id": "2", "properties": {"AREA": 2563, "Concession": "AREA  4", "basin": "Rovuma Basin", "location": "offshore", "operator": "MRV"}, "type": "Feature"}, {"bbox": [34.916700363059654, -21.922300338880785, 35.31990241907535, -21.586114613085684], "geometry": {"coordinates": [[[35.083299636561264, -21.922199249140657], [35.083402633834936, -21.836399077832723], [35.16670036399079, -21.836299896495287], [35.166700364013316, -21.92230033850613], [35.31990241907535, -21.919599532219678], [35.25239131663177, -21.586114613085684], [35.083299637261916, -21.586399077972107], [35.08340263441721, -21.666898727069324], [34.916700363059654, -21.66950035097945], [34.919599532415106, -21.922300338880785], [35.083299636561264, -21.922199249140657]]], "type": "Polygon"}, "id": "3", "properties": {"AREA": 1776, "Concession": "PT PSA", "basin": "Mozambique Basin", "location": "onshore", "operator": "SASOL PETROLEUM MOZAMBIQUE"}, "type": "Feature"}, {"bbox": [40.524999989100984, -11.5080556652889, 40.99985216992636, -10.408333332230903], "geometry": {"coordinates": [[[40.99985216992636, -10.420000007440912], [40.524999989100984, -10.408333332230903], [40.683333320468094, -11.508055552486171], [40.99979133006395, -11.5080556652889], [40.99985216992636, -10.420000007440912]]], "type": "Polygon"}, "id": "4", "properties": {"AREA": 5061, "Concession": "AREA 1", "basin": "Rovuma Basin", "location": "offshore", "operator": "TOTAL"}, "type": "Feature"}, {"bbox": [40.24999999886253, -17.49999999843166, 41.250122068449095, -16.374999998376435], "geometry": {"coordinates": [[[40.24999999886253, -16.749999998927066], [41.00012207018492, -17.49999999843166], [41.250122068449095, -16.999999996637], [40.62499999776041, -16.374999998376435], [40.24999999886253, -16.749999998927066]]], "type": "Polygon"}, "id": "5", "properties": {"AREA": 6179, "Concession": "A5-B", "basin": "Mozambique Basin", "location": "offshore", "operator": "EXXONMOBIL"}, "type": "Feature"}, {"bbox": [34.56264044067584, -22.000000004916654, 35.3075920136583, -21.33614921480398], "geometry": {"coordinates": [[[35.083299637261916, -21.586399077972107], [35.000200270831805, -21.33614921480398], [34.950000762802595, -21.38333320638009], [34.83333015441773, -21.500200272186508], [34.749999924752515, -21.583429337167473], [34.56264044067584, -22.000000004916654], [35.307592013216635, -21.999999964242427], [35.3075920136583, -21.92201310572546], [35.16701695053857, -21.92212800602153], [35.166963416477614, -21.8366580390971], [35.10000038142725, -21.836444611868814], [35.10000038166724, -21.9166660304993], [35.083299636561264, -21.922199249140657], [34.919599532415106, -21.922300338880785], [34.9193190061606, -21.666999140651534], [34.95000076331466, -21.64999961855931], [35.083299637261916, -21.586399077972107]]], "type": "Polygon"}, "id": "6", "properties": {"AREA": 3012, "Concession": "PT5-C", "basin": "Mozambique Basin", "location": "onshore", "operator": "SASOL PETROLEUM MOZAMBIQUE"}, "type": "Feature"}, {"bbox": [39.74799944380848, -16.84411083273752, 40.62499999776041, -16.009499998665284], "geometry": {"coordinates": [[[40.62499999776041, -16.374999998376435], [40.4466999975607, -16.009499998665284], [39.74799944380848, -16.84411083273752], [40.24999999886253, -16.749999998927066], [40.62499999776041, -16.374999998376435]]], "type": "Polygon"}, "id": "7", "properties": {"AREA": 4677, "Concession": "A5-A", "basin": "Mozambique Basin", "location": "offshore", "operator": "ENI MOZAMBICO"}, "type": "Feature"}, {"bbox": [34.000000000000064, -23.999999999999943, 35.46666717600221, -22.499999999999936], "geometry": {"coordinates": [[[34.166666031000055, -22.499999999999936], [34.000000000000064, -22.49999999999994], [34.000000000000064, -23.999999999999943], [35.316667557001814, -23.999999999999854], [35.46666717500244, -23.13333320599982], [35.46666717600221, -22.583333968999803], [34.166666031000055, -22.499999999999936]]], "type": "Polygon"}, "id": "8", "properties": {"AREA": 22812, "Concession": "Mazenga", "basin": "Mozambique Basin", "location": "onshore", "operator": "MOZGAS"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_9e839353a64bc38c4b652ce53b4edf53.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Concession", "operator", "basin", "location", "AREA"];
+    let aliases = ["Concession", "operator", "basin", "location", "AREA"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+</script>
+</html>
